@@ -10,6 +10,8 @@ gem 'haml'
 group :development, :test do
   gem 'capybara'
   gem 'cucumber'
+  gem 'cucumber-rails'
+  gem 'spork', '~> 0.9.0.rc'
   gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'haml-rails'
