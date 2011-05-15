@@ -8,6 +8,22 @@
   = stylesheet_link_tag 'compiled/print.css',  :media => 'print'
   /[if lt IE 8]
     = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
-  %body
-    = render :partial => '/layouts/nav'
-    = yield
+  %body.bp.two-col.my_app
+
+    #container
+
+      #header
+        = render :partial => '/layouts/user_nav'
+        %h1.clear Awesome App Header
+
+      #sidebar
+        = render :partial => '/widgets/nav'
+        
+      #content
+        - flash.each do |type, message|
+          %p{ :class => type }= message
+
+        = yield
+
+      #footer
+        %h3 Awesome App Footer

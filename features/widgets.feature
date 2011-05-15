@@ -51,7 +51,7 @@ And there is a widget "Ipad"
   Then I should be on the widget detail page for "I-pad"
     And I should see "I-pad"
 
-  When I follow "all"
+  When I follow "Widgets"
   Then I should be on the widget listing page
     And I should see "I-pad"
     
