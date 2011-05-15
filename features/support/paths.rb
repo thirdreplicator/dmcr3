@@ -18,9 +18,12 @@ module NavigationHelpers
       new_user_session_path
     when /the new widget page/
       new_widget_path
-    when /the widget show page for "(.*)"/
+    when /the widget detail page for "(.*)"/
       w = Widget.where(:name => $1).first
       widget_path(w)
+    when /the edit widget page for "(.*)"/
+      w = Widget.where(:name => $1).first
+      edit_widget_path(w)      
 
 
     # Add more mappings here.

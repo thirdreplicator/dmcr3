@@ -2,6 +2,7 @@
 
 %h1 Widget listing
 
-- @widgets.each do |w|
-  = w.name
-  %br
+- @widgets.each do |widget|
+  .widget_one_liner
+    .widget_name= widget.name
+    .widget_edit= link_to 'edit', edit_widget_path( widget )

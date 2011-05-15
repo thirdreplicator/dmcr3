@@ -19,4 +19,14 @@ class WidgetsController < ApplicationController
   def show
     @widget = Widget.find(params[:id])
   end
+  
+  def edit
+    @widget = Widget.find(params[:id])
+  end
+  
+  def update
+    @widget = Widget.find(params[:id])
+    @widget.update_attributes(params[:widget])
+    redirect_to widget_path(@widget)
+  end
 end
