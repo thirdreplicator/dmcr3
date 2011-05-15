@@ -1,4 +1,6 @@
 class WidgetsController < ApplicationController
+  before_filter :authenticate_user!, :except => [:show, :index]  
+
   def index
     @widgets = Widget.all
   end

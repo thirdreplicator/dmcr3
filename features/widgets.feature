@@ -28,3 +28,10 @@ And there is a widget "Linux CD"
 When I am on the widget listing page
 Then I should see "Ipad"
 And I should see "Linux CD"
+
+Scenario: Anonymous user, attempt to create
+
+Given I am an anonymous user
+And I am on the widget listing page
+And I follow "new"
+Then I should be on the sign in page
