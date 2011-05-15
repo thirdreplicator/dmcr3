@@ -3,4 +3,11 @@
 // forms from scratch if you need to.
 
 form.bp {
-  @include blueprint-form; }
+  @include blueprint-form;
+
+  
+  margin-top: 15px;
+  .form_item {
+    margin-bottom: 15px;
+  }
+}

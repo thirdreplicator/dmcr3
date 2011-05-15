@@ -2,36 +2,37 @@ body.my_app{
   $padding: 15px;
 
   background-color: pink;
-  div { 
-    padding-bottom: $padding;
-    padding-top: $padding; 
-  }
   
-#user_navigation{
-  float: right;
-  padding-right: $padding;
-  padding:0px;
-}
+  #user_navigation{
+    float: right;
+    margin-right: $padding;
+    padding:0px;
+  }
 
-#container {
-  background-color: #FFF;
-  padding:0;
-} // #container
+  #container {
+    background-color: #FFF;
+    padding:0;
+  } // #container
 
-#header {
-  background-color: #DfD;
-}
+  #header {
+    background-color: #DfD;
+  }
 
-#sidebar{
-  background-color: #DDF;
-}
+  #sidebar{
+    background-color: #DDF;
+  }
 
-#content{
-  background-color: #FdF;
-}
+  #content{
+    background-color: #FdF;
+    padding-top: $padding; 
+    padding-bottom: $padding;
+    text-align:left;
+  }
 
-#footer{
-  background-color: #FFd;
-}
+  #footer{
+    padding-top: $padding; 
+    background-color: #FFd;
+  }
 
+  @import "/partials/models/widget"
 } // body.my_app

@@ -76,35 +76,49 @@ body.bp .hide {
 body.my_app {
   background-color: pink;
 }
-/* line 5, ../../app/stylesheets/partials/_my_app.scss */
-body.my_app div {
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-/* line 10, ../../app/stylesheets/partials/_my_app.scss */
+/* line 6, ../../app/stylesheets/partials/_my_app.scss */
 body.my_app #user_navigation {
   float: right;
-  padding-right: 15px;
+  margin-right: 15px;
   padding: 0px;
 }
-/* line 16, ../../app/stylesheets/partials/_my_app.scss */
+/* line 12, ../../app/stylesheets/partials/_my_app.scss */
 body.my_app #container {
   background-color: #FFF;
   padding: 0;
 }
-/* line 21, ../../app/stylesheets/partials/_my_app.scss */
+/* line 17, ../../app/stylesheets/partials/_my_app.scss */
 body.my_app #header {
   background-color: #DfD;
 }
-/* line 25, ../../app/stylesheets/partials/_my_app.scss */
+/* line 21, ../../app/stylesheets/partials/_my_app.scss */
 body.my_app #sidebar {
   background-color: #DDF;
 }
-/* line 29, ../../app/stylesheets/partials/_my_app.scss */
+/* line 25, ../../app/stylesheets/partials/_my_app.scss */
 body.my_app #content {
   background-color: #FdF;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: left;
 }
-/* line 33, ../../app/stylesheets/partials/_my_app.scss */
+/* line 32, ../../app/stylesheets/partials/_my_app.scss */
 body.my_app #footer {
+  padding-top: 15px;
   background-color: #FFd;
+}
+/* line 1, ../../app/stylesheets/partials/models/_widget.scss */
+body.my_app .widget_one_liner {
+  background-color: white;
+}
+/* line 5, ../../app/stylesheets/partials/models/_widget.scss */
+body.my_app .widget_name {
+  clear: left;
+  float: left;
+  margin-left: 15px;
+}
+/* line 11, ../../app/stylesheets/partials/models/_widget.scss */
+body.my_app .widget_edit {
+  float: right;
+  margin-right: 15px;
 }

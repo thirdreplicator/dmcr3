@@ -428,6 +428,10 @@ body.bp form.inline p {
   margin-bottom: 0;
 }
 
+/* line 5, ../../app/stylesheets/partials/_form.scss */
+form.bp {
+  margin-top: 15px;
+}
 /* line 18, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.bp label {
   font-weight: bold;
@@ -490,6 +494,10 @@ form.bp input.text, form.bp input.title, form.bp input[type=email], form.bp inpu
 form.bp textarea {
   width: 390px;
   height: 250px;
+}
+/* line 10, ../../app/stylesheets/partials/_form.scss */
+form.bp .form_item {
+  margin-bottom: 15px;
 }
 
 /* line 25, ../../app/stylesheets/partials/_two_col.scss */
