@@ -1,3 +1,7 @@
+Given /^I am an anonymous user$/ do
+  visit destroy_user_session_path
+end
+
 Given /^there is a user with email "([^"]*)" and password "([^"]*)"$/ do |email, password|
   Given "I am on the registration page"
   And "I fill in \"user_email\" with \"#{email}\""
@@ -21,3 +25,4 @@ Given /^I am logged in as "([^"]*)"$/ do |email|
   And "I press \"Sign in\""
   Then "I should see \"Hello, #{email}\""
 end
+

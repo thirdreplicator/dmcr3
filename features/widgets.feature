@@ -19,3 +19,12 @@ And I fill in "Ipad" for "widget_name"
 And I press "Create"
 Then I should be on the widget show page for "Ipad"
 And I should see "Ipad"
+
+Scenario: Anonymous user, widget listing
+
+Given I am an anonymous user
+And there is a widget "Ipad"
+And there is a widget "Linux CD"
+When I am on the widget listing page
+Then I should see "Ipad"
+And I should see "Linux CD"
