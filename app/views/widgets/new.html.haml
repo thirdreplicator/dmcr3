@@ -1,0 +1,9 @@
+%h1 New Widget
+
+= form_for @widget do |f|
+  .form_field
+    Name
+    %br
+    = f.text_field 'name'
+  
+  = f.submit 'Create'

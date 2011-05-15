@@ -1,5 +1,5 @@
 Template::Application.routes.draw do
-  root :to => "widgets#index"
-  get "widgets/index"
+  resources :widgets
+  root :controller => 'widgets', :action => 'index'
   devise_for :users
 end
