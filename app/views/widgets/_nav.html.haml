@@ -1,4 +1,6 @@
 #widget_nav
-  = link_to 'new', new_widget_path
-  |
   = link_to 'all', widgets_path
+  - if user_signed_in?
+    |
+    = link_to 'new', new_widget_path
+  
